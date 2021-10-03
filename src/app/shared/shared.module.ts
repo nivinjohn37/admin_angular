@@ -15,6 +15,7 @@ import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
+import { PopularCardComponent } from './widgets/popular-card/popular-card.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PieComponent } from './widgets/pie/pie.component';
     FooterComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    PopularCardComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +46,8 @@ import { PieComponent } from './widgets/pie/pie.component';
     FooterComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    PopularCardComponent
   ]
 })
 export class SharedModule { }
