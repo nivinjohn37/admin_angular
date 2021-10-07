@@ -16,6 +16,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { PopularCardComponent } from './widgets/popular-card/popular-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { PopularCardComponent } from './widgets/popular-card/popular-card.compon
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatCardModule
   ],
   exports:[
     HeaderComponent,
