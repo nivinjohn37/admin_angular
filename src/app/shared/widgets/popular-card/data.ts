@@ -1,18 +1,30 @@
 export interface Data {
     title: string;
     content: string;
+    imgsrc: string;
+    teamName: string;
+    stats: string[];
+    nextMatch: string,
     tags: string[];
   }
   
   export const data: Data[] = [
     {
-      title: "Filtering Objects",
-      content: "Click search to filter posts by title, content, and tags.",
+      title: "Cricket",
+      content: "Last game: 27th Sep 2021",
+      imgsrc: "/assets/images/cricket.png",
+      teamName: "Knights XI Kollam",
+      stats: ["W-L-L-W","121/3|100/10","12R/3W"],
+      nextMatch: "Next game: 2nd Oct 2021",
       tags: ["javascript", "filtering"]
     },
     {
-      title: "Searching an Array of Dates",
-      content: "See this article for searching dates.  For eaxample try typing in '11/25/2014'",
+      title: "Football",
+      content: "Last game: 21th Oct 2021",
+      imgsrc: "/assets/images/football.png",
+      teamName: "Eagles XI TVM",
+      stats: ["W-W-W-L","4-3","27'(P)"],
+      nextMatch: "Next game: 27th Oct 2021",
       tags: ["javascript", "searching"]
     }
   ];
