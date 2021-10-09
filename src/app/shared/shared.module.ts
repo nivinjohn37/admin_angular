@@ -17,6 +17,7 @@ import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { PopularCardComponent } from './widgets/popular-card/popular-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { TeamcardComponent } from './widgets/teamcard/teamcard.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatCardModule } from '@angular/material/card';
     AreaComponent,
     CardComponent,
     PieComponent,
-    PopularCardComponent
+    PopularCardComponent,
+    TeamcardComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +51,8 @@ import { MatCardModule } from '@angular/material/card';
     AreaComponent,
     CardComponent,
     PieComponent,
-    PopularCardComponent
+    PopularCardComponent,
+    TeamcardComponent
   ]
 })
 export class SharedModule { }
