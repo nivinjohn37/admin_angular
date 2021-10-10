@@ -1,7 +1,10 @@
 /* .mat-icon, .description{
     color: green;
 } */
-
+.sportImg {
+  margin-left: auto;
+  margin-right: 70px;
+}
 .up_rate {
   color: green;
 }
@@ -52,7 +55,7 @@
   }
 
   > .temp {
-    background: rgba( 231, 143, 143, 0.25 );
+    background: rgba(231, 143, 143, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -81,5 +84,25 @@
   .imgCls {
     width: 130px;
     height: 136px;
+    border-radius: 50%;
   }
+}
+h4 {
+  margin-top: 0;
+}
+
+.total {
+  font-size: 3em;
+}
+
+.mat-icon,
+.description {
+  color: green;
+  font-size: 2em;
+}
+
+.mat-icon {
+  position: relative;
+  padding: 0 20px;
+  top: 5px;
 }
