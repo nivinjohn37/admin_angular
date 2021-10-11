@@ -1,23 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
-export interface PeriodicElement {
+export interface PlayerStats {
   name: string;
   position: number;
-  weight: number;
-  symbol: string;
+  points: number;
+  team: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+const PLAYER_STAT_DATA: PlayerStats[] = [
+  {position: 1, name: 'Ajesh Anil', points: 74.82, team: 'Eagles XI TVM'},
+  {position: 2, name: 'Vishu M', points: 74.11, team: 'City Marvels Banglore'},
+  {position: 3, name: 'Nivin John', points: 72.15, team: 'Golden Knights Chennai'},
+  {position: 4, name: 'Ronaldo', points: 70.26, team: 'Red Dragons Eklm'},
+  {position: 5, name: 'Bekham', points: 70.05, team: 'Avengers Kozhikode'},
+
+
 ];
 @Component({
   selector: 'app-dashboard',
@@ -27,8 +24,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class DashboardComponent implements OnInit {
 
   bigChart :{ name: string; data: number[]; }[]=[];
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['position', 'name', 'points', 'team'];
+  dataSource = PLAYER_STAT_DATA;
   constructor(private dashboardService: DashboardService) { }
 
   ngOnInit(): void {

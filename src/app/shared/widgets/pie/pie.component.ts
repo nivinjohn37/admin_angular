@@ -20,7 +20,7 @@ export class PieComponent implements OnInit {
         type: 'pie'
       },
       title: {
-        text: 'Random Data'
+        text: 'Top Cities -Clubs'
       },
       tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -50,30 +50,30 @@ export class PieComponent implements OnInit {
         name: 'Brands',
         colorByPoint: true,
         data: [{
-          name: 'Chrome',
+          name: 'Trivandrum',
           y: 61.41,
           sliced: true,
           selected: true
         }, {
-          name: 'Internet Explorer',
+          name: 'Eklm',
           y: 11.84
         }, {
-          name: 'Firefox',
+          name: 'Banglore',
           y: 10.85
         }, {
-          name: 'Edge',
+          name: 'Kozhikode',
           y: 4.67
         }, {
-          name: 'Safari',
+          name: 'Mumbai',
           y: 4.18
         }, {
-          name: 'Sogou Explorer',
+          name: 'Chennai',
           y: 1.64
         }, {
-          name: 'Opera',
+          name: 'Kollam',
           y: 1.6
         }, {
-          name: 'QQ',
+          name: 'Punjab',
           y: 1.2
         }, {
           name: 'Other',
