@@ -2,6 +2,17 @@
 /* .mat-icon, .description{
     color: green;
 } */
+.cardStyleOff {
+  padding: 2rem;
+  min-width: 20rem;
+}
+
+.cardStyleOn {
+  padding: 2rem;
+  min-width: 20rem;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%)
+}
 
 .up_rate {
     color: green;

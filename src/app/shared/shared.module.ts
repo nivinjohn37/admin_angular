@@ -20,7 +20,8 @@ import { MatCardModule } from '@angular/material/card';
 import { TeamcardComponent } from './widgets/teamcard/teamcard.component';
 import { TournamentComponent } from './widgets/tournament/tournament.component';
 import { TrendtoursComponent } from './widgets/trendtours/trendtours.component';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -46,6 +47,8 @@ import { TrendtoursComponent } from './widgets/trendtours/trendtours.component';
     RouterModule,
     HighchartsChartModule,
     MatCardModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   exports: [
     HeaderComponent,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
 import { data, TeamData } from './team-data';
 
 @Component({
@@ -8,9 +9,14 @@ import { data, TeamData } from './team-data';
 })
 export class TeamcardComponent implements OnInit {
   teamCards: Array<TeamData> = data;
-  constructor() { }
-
+  constructor(private dataService: DataService) { }
+  message: string;
+  
   ngOnInit(): void {
+    this.dataService.receiveMessage().subscribe((d) => {
+      this.message = d;
+      console.log(this.message);
+    });
   }
 
   selectPost(data:TeamData) {
