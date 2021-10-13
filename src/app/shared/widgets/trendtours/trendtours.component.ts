@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import { data, TrendtourData } from './trendtour-data';
 import HC_exporting from 'highcharts/modules/exporting';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-widget-trendtours',
@@ -15,13 +16,18 @@ export class TrendtoursComponent implements OnInit {
   @Input() percentage: string="";
   chartOptions: {} = {};
   Highcharts = Highcharts;
-  constructor() { }
+  message: string;
+  constructor(private dataService: DataService) { }
 
 
   selectPost(data: TrendtourData) {
     console.log(`The selected post is::  ${data.title}`);
   }
   ngOnInit(): void {
+    this.dataService.receiveMessage().subscribe((d) => {
+      this.message = d;
+      console.log(this.message);
+    });
     this.chartOptions = {
       chart: {
         type: 'area',
@@ -92,3 +98,7 @@ export class TrendtoursComponent implements OnInit {
   }
 
 }
+
+
+
+ 

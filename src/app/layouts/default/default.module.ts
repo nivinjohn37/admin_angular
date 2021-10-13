@@ -20,6 +20,8 @@ import { MatInputModule } from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -41,7 +43,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     MatIconModule,
     FormsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatButtonModule
 
   ],
   providers:[
