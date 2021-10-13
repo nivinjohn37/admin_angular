@@ -1,18 +1,51 @@
-h4{
-    margin-top: 0;
+@import "./../styles/shared.scss";
+.cardStyleOff {
+  padding: 2rem;
+  min-width: 20rem;
 }
 
-.total{
-    font-size: 3em;
+.cardStyleOn { 
+  padding: 2rem;
+  min-width: 20rem;
+  background-color: #68ccd1;
+  background-image: linear-gradient(298deg, #68ccd1 0%, #978dcd 100%);
 }
 
-.mat-icon, .description{
-    color: green;
-    font-size: 2em;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    flex: 50%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  > .outlook {
+    color: black#0000001a;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  > .temp {
+    background: lightblue;
+    color: black;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-text {
+    font-size: 30px;
+  }
+
+  .imgCls {
+    width: 130px;
+    height: 136px;
+  }
 }
 
-.mat-icon{
-    position: relative;
-    padding: 0 20px;
-    top: 5px
+mat-card::ng-deep.mat-card-header-text {
+  width: 100%;
 }

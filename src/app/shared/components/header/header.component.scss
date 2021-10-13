@@ -1,3 +1,21 @@
 ul li{
     list-style: none;
 }
+
+.imgCls {
+    width: 48px;
+    height: 60px;
+    margin-left: 350px;
+}
+
+.logoHeadStyle{
+    display: flex;
+    flex-direction: row;
+    margin-left: 178px;
+}
+
+.logoText{
+    margin-top: 25px;
+    font-size: 17px;
+    font-family: cursive;
+}
